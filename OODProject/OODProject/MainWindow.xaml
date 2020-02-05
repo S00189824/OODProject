@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <ListBox HorizontalAlignment="Left" Height="300" Margin="32,60,0,0" VerticalAlignment="Top" Width="170"/>
-        <ListBox HorizontalAlignment="Left" Height="205" Margin="233,107,0,0" VerticalAlignment="Top" Width="155"/>
+        <ListBox x:Name="ArtistListBox" HorizontalAlignment="Left" Height="205" Margin="233,107,0,0" VerticalAlignment="Top" Width="155"/>
         <ListBox HorizontalAlignment="Left" Height="205" Margin="410,107,0,0" VerticalAlignment="Top" Width="156"/>
         <ListBox HorizontalAlignment="Left" Height="205" Margin="586,107,0,0" VerticalAlignment="Top" Width="144"/>
         <Label Content="Artists" HorizontalAlignment="Left" Margin="276,60,0,0" VerticalAlignment="Top" Width="69"/>

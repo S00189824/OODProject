@@ -40,6 +40,14 @@ namespace OODProject {
     /// </summary>
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 11 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListBox ArtistListBox;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -77,6 +85,9 @@ namespace OODProject {
             
             #line default
             #line hidden
+            return;
+            case 2:
+            this.ArtistListBox = ((System.Windows.Controls.ListBox)(target));
             return;
             }
             this._contentLoaded = true;
