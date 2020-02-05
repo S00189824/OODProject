@@ -8,13 +8,38 @@
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="MainWindow" Height="500" Width="300" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="Black">
-        <Grid VerticalAlignment ="Top">
-            <Button HorizontalAlignment="Left" Width="20" Height="20" Margin="10,0" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" ></Button>
-            <materialDesign:PackIcon>
-                
-            </materialDesign:PackIcon>
+        <Grid VerticalAlignment ="Top" Margin="10">
+            <Button HorizontalAlignment="Left" Width="20" Height="20" Margin="10,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top">
+                <materialDesign:PackIcon Kind="Plus" Width="20" Height="20">
+                <materialDesign:PackIcon.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FFD69016"/>
+                        <GradientStop Color="#FFD6511E" Offset="0.747"/>
+                        <GradientStop Color="#FF9B330D" Offset="0.747"/>
+                    </LinearGradientBrush>
+                </materialDesign:PackIcon.Foreground>
+                </materialDesign:PackIcon>
             </Button>
-
+            <StackPanel>
+                <TextBlock Text="Tocando Agora" HorizontalAlignment="Center" Foreground="LightSteelBlue"/>
+                <TextBlock Text="Witt Lowry - Around Your Heart" HorizontalAlignment="Center" Foreground="LightSteelBlue"/>
+            </StackPanel>
+            <Button HorizontalAlignment="Right" Width="20" Height="20" Margin="10,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top">
+                <materialDesign:PackIcon Kind="Power" Width="20" Height="20">
+                    <materialDesign:PackIcon.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFD69016"/>
+                            <GradientStop Color="#FFD6511E" Offset="0.747"/>
+                            <GradientStop Color="#FF9B330D" Offset="0.747"/>
+                        </LinearGradientBrush>
+                    </materialDesign:PackIcon.Foreground>
+                </materialDesign:PackIcon>
+            </Button>
+        </Grid>
+        <Grid Margin="10" Background="#44444444" Height="300" VerticalAlignment="Top">
+            <Ellipse Width="150" Height="150">
+                
+            </Ellipse>
         </Grid>
         
     </Grid>
