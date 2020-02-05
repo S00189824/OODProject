@@ -37,8 +37,15 @@
             </Button>
         </Grid>
         <Grid Margin="10" Background="#44444444" Height="300" VerticalAlignment="Top">
-            <Ellipse Width="150" Height="150">
-                
+            <Ellipse Width="150" Height="150" StrokeThickness="5">
+                <Ellipse.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0.71"/>
+                        <GradientStop Color="#FFB85219"/>
+                        <GradientStop Color="#FEB14F18" Offset="0.60"/>
+                    </LinearGradientBrush>
+                </Ellipse.Stroke>
+
             </Ellipse>
         </Grid>
         
