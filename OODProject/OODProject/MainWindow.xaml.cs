@@ -20,6 +20,8 @@ namespace OODProject
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Artists> AllArtists = new List<Artists>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +29,7 @@ namespace OODProject
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            Artists a1 = new Artists()
         }
     }
 }

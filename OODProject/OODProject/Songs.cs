@@ -17,8 +17,10 @@ namespace OODProject
 
     }
 
-    public class Songs : IComparable
+    public abstract class Songs : IComparable
     {
+        private string artistname;
+
         public string SongName { get; set; }
         public string ArtistsName { get; set; }
         public DateTime ReleaseDate { get; set; }
@@ -29,6 +31,11 @@ namespace OODProject
             SongName = songname;
             ArtistsName = artistname;
             ReleaseDate = date;
+        }
+
+        public Songs(string artistname)
+        {
+            this.artistname = artistname;
         }
 
         public int CompareTo(object obj)
