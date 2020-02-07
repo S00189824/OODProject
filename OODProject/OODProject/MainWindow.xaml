@@ -7,6 +7,13 @@
         mc:Ignorable="d"
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="MainWindow" Height="500" Width="300" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            
+        </ResourceDictionary>
+    </Window.Resources>
+    
     <Grid Background="Black">
         <Grid VerticalAlignment ="Top" Margin="10">
             <Button HorizontalAlignment="Left" Width="20" Height="20" Margin="10,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top">
@@ -102,6 +109,7 @@
                         </materialDesign:PackIcon.Foreground>
                     </materialDesign:PackIcon>
                 </Button>
+                
 
                 <Button  HorizontalAlignment="Right" Width="20" Height="20" Margin="50,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center">
                     <materialDesign:PackIcon Kind="ChevronRight" Width="20" Height="20">
@@ -136,6 +144,9 @@
                             <ImageBrush ImageSource="Assets/Pic2.jpg"/>
                         </Ellipse.Fill>
                     </Ellipse>
+                    <TextBlock Text="Abstract - Neverland (ft. Ruth B) (Prod. Blulake)" VerticalAlignment="Center" Width="100" TextTrimming="CharacterEllipsis"></TextBlock>
+                    <TextBlock Text="2019" VerticalAlignment="Center" Margin="10,0"></TextBlock>
+                    <TextBlock Text="3.36" VerticalAlignment="Center"></TextBlock>
                 </StackPanel>
             </ListViewItem>
         </ListView>
