@@ -9,9 +9,15 @@
         Title="MainWindow" Height="500" Width="300" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
-        <ResourceDictionary>
-            
-        </ResourceDictionary>
+        <DataTemplate x:Key="ListBoxMusic">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Path=TrackID}"/>
+                <Image Source="{Binding Path=Image}"/>
+                <TextBlock Text="{Binding Path=TrackName}"/>
+                <TextBlock Text="{Binding Path=TrackYear}"/>
+                <TextBlock Text="{Binding Path=TrackTime}"/>
+            </StackPanel>
+        </DataTemplate>
     </Window.Resources>
     
     <Grid Background="Black">
@@ -135,7 +141,7 @@
                 </Button>
             </Grid>
         </Grid>
-        <ListView VerticalAlignment="Bottom" Margin="10" Height="140" Foreground="LightSteelBlue">
+        <ListBox x:Name="lbxMusic" ItemTemplate="{StaticResource ListBoxMusic}" VerticalAlignment="Bottom" Margin="10" Height="140" Foreground="LightSteelBlue">
             <ListViewItem>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="01" VerticalAlignment="Center" />
@@ -149,6 +155,7 @@
                     <TextBlock Text="3.36" VerticalAlignment="Center"></TextBlock>
                 </StackPanel>
             </ListViewItem>
-        </ListView>
+        </ListBox>
+
     </Grid>
 </Window>

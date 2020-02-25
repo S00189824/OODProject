@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODProject", "OODProject\OODProject.csproj", "{2BF202C5-3A61-447B-9F33-F6EA9A13D666}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDataTemplate", "SampleDataTemplate\SampleDataTemplate.csproj", "{57B722F0-2B9F-4586-A1EC-D09368B74EDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2BF202C5-3A61-447B-9F33-F6EA9A13D666}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BF202C5-3A61-447B-9F33-F6EA9A13D666}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BF202C5-3A61-447B-9F33-F6EA9A13D666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B722F0-2B9F-4586-A1EC-D09368B74EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B722F0-2B9F-4586-A1EC-D09368B74EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B722F0-2B9F-4586-A1EC-D09368B74EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B722F0-2B9F-4586-A1EC-D09368B74EDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

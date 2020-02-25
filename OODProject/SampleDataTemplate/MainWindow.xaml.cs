@@ -13,24 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace OODProject
+namespace SampleDataTemplate
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Artists> AllArtists = new List<Artists>();
-
         public MainWindow()
         {
             InitializeComponent();
-            
-        }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            
+            lbxMusic.ItemsSource;
         }
     }
 }
