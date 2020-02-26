@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace OODProject
 {
@@ -17,20 +18,34 @@ namespace OODProject
 
     }
 
-    public abstract class Songs : IComparable
+    public class Songs : IComparable
     {
         private string artistname;
 
         public string SongName { get; set; }
-        public string ArtistsName { get; set; }
+        public int TrackNumber { get; set; }
         public DateTime ReleaseDate { get; set; }
 
+        public TimeSpan Time;
 
-        public Songs(string songname,string artistname,DateTime date)
+        public int ReleaseYear
+        {
+            get
+            {
+                return ReleaseDate.Year;
+            }
+        }
+
+        
+
+
+        public Songs(string songname,int track,DateTime date,TimeSpan time)
         {
             SongName = songname;
-            ArtistsName = artistname;
+            TrackNumber = track;
             ReleaseDate = date;
+            Time = time;
+            
         }
 
         public Songs(string artistname)

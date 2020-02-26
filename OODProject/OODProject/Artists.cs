@@ -6,21 +6,18 @@ using System.Threading.Tasks;
 
 namespace OODProject
 {
-    class Artists : Songs
+    public class Artists
     {
-        public Artists(string songname, string artistname, DateTime date) : base(songname, artistname, date)
+        public Artists(string songname, string artistname, DateTime date)
         {
 
         }
 
-        public Artists(string artistname) : base(artistname)
+        public Artists(string artistname)
         {
 
         }
 
-        public override string ToString()
-        {
-            return ArtistsName;
-        }
+        
     }
 }
