@@ -8,7 +8,7 @@
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="MainWindow" Height="500" Width="300" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
 
-    
+
 
 
     <Window.Resources>
@@ -26,7 +26,7 @@
             </StackPanel>
         </DataTemplate>
     </Window.Resources>
-    
+
     <Grid Background="Black">
         <Grid VerticalAlignment ="Top" Margin="10">
             <Button HorizontalAlignment="Left" Width="20" Height="20" Margin="10,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top">
@@ -108,7 +108,7 @@
                     </materialDesign:PackIcon>
                 </Button>
 
-                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" BorderBrush="#70702222" Background="#B2222222">
+                <Button x:Name="BtnPlay" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" BorderBrush="#70702222" Background="#B2222222" Click="BtnPlay_Click">
                     <Button.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#FFD67619" Direction="-0" RenderingBias="Quality" ShadowDepth="1"/>
                     </Button.Effect>
