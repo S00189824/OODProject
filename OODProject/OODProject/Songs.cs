@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,7 @@ namespace OODProject
         public string SongName { get; set; }
         public int TrackNumber { get; set; }
         public DateTime ReleaseDate { get; set; }
+        public FileInfo file { get; set; }
 
         public TimeSpan Time;
 
@@ -39,13 +41,13 @@ namespace OODProject
         
 
 
-        public Songs(string songname,int track,DateTime date,TimeSpan time)
+        public Songs(string songname,int track,DateTime date,TimeSpan time,FileInfo f)
         {
             SongName = songname;
             TrackNumber = track;
             ReleaseDate = date;
             Time = time;
-            
+            file = f;
         }
 
         public Songs(string artistname)

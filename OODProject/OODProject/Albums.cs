@@ -2,11 +2,14 @@
 
 namespace OODProject
 {
-    class Albums
+    public class Albums
     {
-        public List<Albums> albums { get; set; }
+        public string AlbumName { get; set; }
 
-        
+        public Albums()
+        {
+
+        }
 
         public override string ToString()
         {
