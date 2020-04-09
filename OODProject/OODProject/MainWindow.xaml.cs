@@ -21,11 +21,7 @@ namespace OODProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Songs> AllSongs = new List<Songs>();
-        MediaPlayer songsToPlay;
-        FileInfo SongsFile;
-        DirectoryInfo desktopfolder = new DirectoryInfo(@"C:\Users\david\OneDrive\Desktop" + "\\Music");
-        MediaPlayer p1 = new MediaPlayer();
+        
 
 
         public MainWindow()
@@ -37,14 +33,14 @@ namespace OODProject
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //DisplaySongs();
-            foreach (var fileinfo in desktopfolder.GetFiles())
-            {
-                Songs s1 = new Songs(fileinfo.Name, 1, new DateTime(2019, 1, 10), new TimeSpan(0, 2, 22),fileinfo);
+            //foreach (var fileinfo in desktopfolder.GetFiles())
+            //{
+            //    Songs s1 = new Songs(fileinfo.Name, 1, new DateTime(2019, 1, 10), new TimeSpan(0, 2, 22),fileinfo);
 
-                AllSongs.Add(s1);
-            }
+            //    AllSongs.Add(s1);
+            //}
 
-            lbxMusic.ItemsSource = AllSongs;
+            //lbxMusic.ItemsSource = AllSongs;
             
 
         }
@@ -104,9 +100,7 @@ namespace OODProject
         {
             if(lbxMusic.SelectedIndex != -1)
             {
-                Songs selectedsong = AllSongs[lbxMusic.SelectedIndex];
-                p1.Open(new Uri(selectedsong.file.FullName));
-                p1.Play();
+                
             }
         }
     }

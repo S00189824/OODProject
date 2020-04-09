@@ -9,20 +9,29 @@ namespace OODProject
 {
     public class Artists
     {
+        public int ID { get; set; } 
         public string Artistname { get; set; }
-        public List<Albums> albums { get; set; }
-        public DirectoryInfo directoryInfo { get; set; }
+        public int YearReleased { get; set; }
+        public string Genre { get; set; }
+
+        
+        public virtual List<Songs> Songs { get; set; }
 
         public Artists( string artistname)
         {
 
         }
 
-        public Artists(string artistname, DirectoryInfo directoryInfo)
+       
+
+        public class Songs
         {
-            this.directoryInfo = directoryInfo;
-            Artistname = artistname;
-            this.albums = new List<Albums>();
+            public int SongID { get; set; }
+            public int ID { get; set; }
+            public string SongName { get; set; }
+            public string SongImage { get; set; }
+
+            public virtual Artists Artists { get; set; }
         }
     }
 }
