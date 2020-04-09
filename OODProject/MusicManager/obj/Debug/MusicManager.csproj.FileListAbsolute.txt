@@ -1,0 +1,15 @@
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\MusicManager.exe.config
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\MusicManager.exe
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\MusicManager.pdb
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\EntityFramework.dll
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\OODProject.exe
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\OODProject.pdb
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\OODProject.exe.config
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\EntityFramework.xml
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\obj\Debug\MusicManager.csprojAssemblyReference.cache
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\obj\Debug\MusicManager.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\obj\Debug\MusicManager.csproj.CopyComplete
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\obj\Debug\MusicManager.exe
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\obj\Debug\MusicManager.pdb

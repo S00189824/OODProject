@@ -23,8 +23,9 @@ namespace OODProject
     {
         MediaPlayer player = new MediaPlayer();
         List<Artists> Artists = new List<Artists>();
-        FileInfo ArtistFile;
         DirectoryInfo desktopfolder = new DirectoryInfo(@"C:\Users\david\OneDrive\Desktop" + "\\Music");
+        SongData db = new SongData();
+
 
         public MainWindow()
         {
@@ -35,6 +36,12 @@ namespace OODProject
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             
+
+            var query = from s in db.Songs
+                        select s.SongName;
+
+            lbxMusic.ItemsSource = query.ToList();
+            Console.WriteLine(query.ToList());
         }
 
 
@@ -43,10 +50,14 @@ namespace OODProject
 
         private void BtnPlay_Click(object sender, RoutedEventArgs e)
         {
-            if(lbxMusic.SelectedIndex != -1)
-            {
-                
-            }
+            string directoryname = @"C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\Artists\Nier\";
+            string songname = "Dark Colossus - Kaiju";
+            string filetype = ".mp3";
+
+            Uri song = new Uri(directoryname + songname + filetype, UriKind.Relative);
+
+            player.Open(song);
+            player.Play();
         }
     }
 }

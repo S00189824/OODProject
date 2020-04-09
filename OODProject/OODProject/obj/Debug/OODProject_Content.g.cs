@@ -8,15 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/amvtoo%20much!.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/audiomachine%20-%20all%20that%20we%20are.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/audiomachine%20-%20nothing%20to%20prove%20to%20you.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/aurora%20-%20boardwalk.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/beautiful%20piano%20voice%20the%20start%20by%20lloren.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/clint%20eastwood%20by%20gorillaz%20amv%20black%20butler.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/oh%20be%20clever%20-%20river.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/varien%20-%20born%20of%20blood,%20risen%20from%20ash.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/[chillout]%20two%20ways%20-%20beautiful%20times%20(ft.%20tifanny%20wiemken)" +
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/nier/dark%20colossus%20-%20kaiju.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/nier/emil%20-%20despair.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/nier/significance%20-%20nothing%20-%20j\'nique%20nicole.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/nier/the%20sound%20of%20the%20end.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/nier/war%20&%20war.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/02.%20geralt%c2%a0of%c2%a0rivia.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/08.%20spikeroog.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/10.%20silver%c2%a0for%c2%a0monsters....mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/12.%20the%c2%a0nightingale.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/gwent%20the%20witcher%20card%20game%20ost%20-%20monstrous%20might" +
     ".mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/the%20bloody%20mistress%20thronebreaker%20the%20witcher%20tales%2" +
+    "0ost.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/thronebreaker%20the%20witcher%20tales%20ost%20-%20retribution%20(" +
+    "long%20version).mp3")]
 
 
