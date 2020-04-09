@@ -14,24 +14,19 @@ namespace OODProject
         public int YearReleased { get; set; }
         public string Genre { get; set; }
 
+        public int SongID { get; set; }
+        public virtual Songs Songs { get; set; }
+
         
-        public virtual List<Songs> Songs { get; set; }
+    }
 
-        public Artists( string artistname)
-        {
+    public class Songs
+    {
+        public int SongID { get; set; }
+        public string SongName { get; set; }
+        public string SongImage { get; set; }
+        public string SongFile { get; set; }
 
-        }
-
-       
-
-        public class Songs
-        {
-            public int SongID { get; set; }
-            public int ID { get; set; }
-            public string SongName { get; set; }
-            public string SongImage { get; set; }
-
-            public virtual Artists Artists { get; set; }
-        }
+        public virtual List <Artists> Artists { get; set; }
     }
 }

@@ -64,3 +64,7 @@ C:\Users\david\OneDrive\Documents\Github\OODProject\OODProject\OODProject\obj\De
 C:\Users\david\OneDrive\Documents\Github\OODProject\OODProject\OODProject\obj\Debug\OODProject.csproj.GenerateResource.cache
 C:\Users\david\OneDrive\Documents\Github\OODProject\OODProject\OODProject\obj\Debug\OODProject.csproj.CoreCompileInputs.cache
 C:\Users\david\OneDrive\Documents\Github\OODProject\OODProject\OODProject\obj\Debug\OODProject.csproj.CopyComplete
+C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\bin\Debug\EntityFramework.dll
+C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\bin\Debug\EntityFramework.xml
+C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\bin\Debug\EntityFramework.SqlServer.xml

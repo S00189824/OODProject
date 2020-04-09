@@ -135,6 +135,8 @@
                         </materialDesign:PackIcon.Foreground>
                     </materialDesign:PackIcon>
                 </Button>
+                
+
                 <Button HorizontalAlignment="Right" Width="20" Height="20" Margin="10,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center">
                     <materialDesign:PackIcon Kind="Shuffle" Width="20" Height="20">
                         <materialDesign:PackIcon.Foreground>
@@ -162,7 +164,32 @@
                     <TextBlock Text="3.36" VerticalAlignment="Center"></TextBlock>
                 </StackPanel>
             </ListViewItem>-->
+            
+
         </ListBox>
 
+        <Button  HorizontalAlignment="Right" Width="20" Height="20" Margin="50,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center">
+            <materialDesign:PackIcon Kind="ChevronRight" Width="20" Height="20">
+                <materialDesign:PackIcon.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FFD69016"/>
+                        <GradientStop Color="#FFD6511E" Offset="0.747"/>
+                        <GradientStop Color="#FF9B330D" Offset="0.747"/>
+                    </LinearGradientBrush>
+                </materialDesign:PackIcon.Foreground>
+            </materialDesign:PackIcon>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Width="20" Height="20" Margin="50,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center">
+            <materialDesign:PackIcon Kind="ChevronLeft" Width="20" Height="20">
+                <materialDesign:PackIcon.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FFD69016"/>
+                        <GradientStop Color="#FFD6511E" Offset="0.747"/>
+                        <GradientStop Color="#FF9B330D" Offset="0.747"/>
+                    </LinearGradientBrush>
+                </materialDesign:PackIcon.Foreground>
+            </materialDesign:PackIcon>
+        </Button>
     </Grid>
 </Window>
