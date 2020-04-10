@@ -40,8 +40,8 @@ namespace OODProject
             var query = from s in db.Songs
                         select s.SongName;
 
-            lbxMusic.ItemsSource = query.ToList();
-            Console.WriteLine(query.ToList());
+            lbxMusic.ItemsSource = query.ToString();
+            Console.WriteLine(query.ToString());
         }
 
 
@@ -50,14 +50,19 @@ namespace OODProject
 
         private void BtnPlay_Click(object sender, RoutedEventArgs e)
         {
-            string directoryname = @"C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\Artists\Nier\";
-            string songname = "Dark Colossus - Kaiju";
+            string directoryname = @"C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\Artists\Witcher\";
+            string songname = "GWENT The Witcher Card Game OST - Monstrous Might";
             string filetype = ".mp3";
 
             Uri song = new Uri(directoryname + songname + filetype, UriKind.Relative);
 
             player.Open(song);
             player.Play();
+        }
+
+        private void LbxMusic_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

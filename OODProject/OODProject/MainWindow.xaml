@@ -23,6 +23,7 @@
                 <TextBlock Text="{Binding Path=SongName}" VerticalAlignment="Center" Width="100" TextTrimming="CharacterEllipsis"/>
                 <TextBlock Text="{Binding Path=ReleaseYear}" VerticalAlignment="Center" Margin="10,0"/>
                 <TextBlock Text="{Binding Path=Time}" VerticalAlignment="Center"/>
+                
             </StackPanel>
         </DataTemplate>
     </Window.Resources>
