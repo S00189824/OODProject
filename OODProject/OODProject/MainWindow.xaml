@@ -14,15 +14,15 @@
     <Window.Resources>
         <DataTemplate x:Key="ListBoxMusic">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Path=TrackNumber}" VerticalAlignment="Center"/>
+                <!--<TextBlock Text="{Binding Path=TrackNumber}" VerticalAlignment="Center"/>-->
                 <Ellipse Margin="20,0" Height="20" VerticalAlignment="Center">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="Assets/Pic2.jpg"/>
                     </Ellipse.Fill>
                 </Ellipse>
                 <TextBlock Text="{Binding Path=SongName}" VerticalAlignment="Center" Width="100" TextTrimming="CharacterEllipsis"/>
-                <TextBlock Text="{Binding Path=ReleaseYear}" VerticalAlignment="Center" Margin="10,0"/>
-                <TextBlock Text="{Binding Path=Time}" VerticalAlignment="Center"/>
+                <!--<TextBlock Text="{Binding Path=ReleaseYear}" VerticalAlignment="Center" Margin="10,0"/>-->
+                <!--<TextBlock Text="{Binding Path=Time}" VerticalAlignment="Center"/>-->
                 
             </StackPanel>
         </DataTemplate>

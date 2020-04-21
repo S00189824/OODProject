@@ -38,10 +38,10 @@ namespace OODProject
             
 
             var query = from s in db.Songs
-                        select s.SongName;
-
-            lbxMusic.ItemsSource = query.ToString();
-            Console.WriteLine(query.ToString());
+                        select s;
+            //var result = query.ToList();
+            lbxMusic.ItemsSource = query.ToList();
+            
         }
 
 
