@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace OODProject
 {
@@ -36,18 +37,24 @@ namespace OODProject
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            DispatcherTimer dt = new DispatcherTimer();
+            dt.Interval = TimeSpan.FromSeconds(1);
+            dt.Tick += Dt_Tick;
 
-            //var query = from a in db.Artists
-            //            select a;
-            ////var result = query.ToList();
-            //lbxMusic.ItemsSource = query.ToList();
-            
+            var query = from a in db.Artists
+                        select a;
+            //var result = query.ToList();
+            lbxMusic.ItemsSource = query.ToList();
+
         }
 
 
-        
-
+        private int increment = 0;
+        private void Dt_Tick(object sender, EventArgs e)
+        {
+            increment++;
+            
+        }
 
         private void BtnPlay_Click(object sender, RoutedEventArgs e)
         {
@@ -61,10 +68,7 @@ namespace OODProject
             player.Play();
         }
 
-        private void LbxMusic_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void LbxMusic_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -93,5 +97,8 @@ namespace OODProject
         {
 
         }
+
+        
+        
     }
 }
