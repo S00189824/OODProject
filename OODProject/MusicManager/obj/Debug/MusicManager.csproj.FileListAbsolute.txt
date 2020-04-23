@@ -13,3 +13,5 @@ C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\obj\Debug\Mus
 C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\obj\Debug\MusicManager.csproj.CopyComplete
 C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\obj\Debug\MusicManager.exe
 C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\obj\Debug\MusicManager.pdb
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\NAudio.dll
+C:\Users\David\Documents\GitHub\OODProject\OODProject\MusicManager\bin\Debug\NAudio.xml

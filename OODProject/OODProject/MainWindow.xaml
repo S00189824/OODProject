@@ -14,13 +14,16 @@
     <Window.Resources>
         <DataTemplate x:Key="ListBoxMusic">
             <StackPanel Orientation="Horizontal">
-                <!--<TextBlock Text="{Binding Path=TrackNumber}" VerticalAlignment="Center"/>-->
-                <Ellipse Margin="20,0" Height="20" VerticalAlignment="Center">
+                
+                <Ellipse x:Name="ArtistImage" Margin="20,0" Height="20" VerticalAlignment="Center">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="Assets/Pic2.jpg"/>
                     </Ellipse.Fill>
                 </Ellipse>
-                <TextBlock Text="{Binding Path=Artistname}" VerticalAlignment="Center" Width="100" TextTrimming="CharacterEllipsis"/>
+                
+                
+                
+                <!--<TextBlock Text="{Binding Path=Artistname}" VerticalAlignment="Center" Width="100" TextTrimming="CharacterEllipsis"/>-->
                 <!--<TextBlock Text="{Binding Path=ReleaseYear}" VerticalAlignment="Center" Margin="10,0"/>-->
                 <!--<TextBlock Text="{Binding Path=Time}" VerticalAlignment="Center"/>-->
 
@@ -58,7 +61,7 @@
             </Button>
         </Grid>
         <Grid Margin="10" Background="#44444444" Height="300" VerticalAlignment="Top">
-            <Ellipse Width="150" Height="150" StrokeThickness="1" Margin="64,38,60,112">
+            <Ellipse StrokeThickness="1" Margin="83,60,73,119">
                 <Ellipse.Stroke>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0.71"/>
@@ -68,7 +71,7 @@
                 </Ellipse.Stroke>
 
             </Ellipse>
-            <Ellipse Width="145" Height="145" Margin="66,40,62,115">
+            <Ellipse Margin="85,62,75,121">
                 <Ellipse.Fill>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF0C0604" Offset="1"/>
@@ -77,14 +80,12 @@
                     </LinearGradientBrush>
                 </Ellipse.Fill>
             </Ellipse>
-            <Ellipse Width="135" Height="135" Margin="72,45,68,120">
+            <Ellipse Name="artistImage" Margin="89,66,79,125">
                 <Ellipse.Fill>
                     <ImageBrush ImageSource="Assets/unnamed.jpg" Stretch="UniformToFill"/>
                 </Ellipse.Fill>
             </Ellipse>
-            <Ellipse Width="135" Height="135" Fill="#66000000" Margin="72,45,68,120">
-
-            </Ellipse>
+            <Ellipse Fill="#66000000" Margin="89,66,79,125"/>
             <Grid VerticalAlignment="Bottom" Margin="5">
                 <Button HorizontalAlignment="Left" Width="20" Height="20" Margin="10,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center" >
                     <materialDesign:PackIcon Kind="RotateRight" Width="20" Height="20">
@@ -150,25 +151,8 @@
                     </materialDesign:PackIcon>
                 </Button>
             </Grid>
-            <TextBlock x:Name="TblkArtistName" HorizontalAlignment="Left" Margin="72,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="17" TextAlignment="Center" Text="ArtistName"/>
+            <TextBlock x:Name="TblkArtistName" HorizontalAlignment="Left" Margin="72,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="17" TextAlignment="Center" Text="ArtistName" Foreground="#FFE3EAD8"/>
         </Grid>
-        <ListBox  x:Name="lbxMusic" ItemTemplate="{StaticResource ListBoxMusic}" VerticalAlignment="Bottom" Margin="10" Height="140" Foreground="LightSteelBlue" SelectionChanged="LbxMusic_SelectionChanged">
-            <!--<ListViewItem>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="01" VerticalAlignment="Center" />
-                    <Ellipse Margin="20,0" Width="20" Height="20" VerticalAlignment="Center">
-                        <Ellipse.Fill>
-                            <ImageBrush ImageSource="Assets/Pic2.jpg"/>
-                        </Ellipse.Fill>
-                    </Ellipse>
-                    <TextBlock Text="Abstract - Neverland (ft. Ruth B) (Prod. Blulake)" VerticalAlignment="Center" Width="100" TextTrimming="CharacterEllipsis"></TextBlock>
-                    <TextBlock Text="2019" VerticalAlignment="Center" Margin="10,0"></TextBlock>
-                    <TextBlock Text="3.36" VerticalAlignment="Center"></TextBlock>
-                </StackPanel>
-            </ListViewItem>-->
-
-
-        </ListBox>
 
         <Button x:Name="BtnCycleRight"  HorizontalAlignment="Right" Width="20" Height="20" Margin="50,5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center" Click="BtnCycleRight_Click">
             <materialDesign:PackIcon Kind="ChevronRight" Width="20" Height="20">
@@ -193,5 +177,6 @@
                 </materialDesign:PackIcon.Foreground>
             </materialDesign:PackIcon>
         </Button>
+        <ListBox x:Name="test" HorizontalAlignment="Left" Height="133" Margin="10,328,0,0" VerticalAlignment="Top" Width="274" Foreground="#DDFFFFFF"/>
     </Grid>
 </Window>

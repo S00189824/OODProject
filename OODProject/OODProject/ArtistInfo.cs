@@ -12,9 +12,7 @@ namespace OODProject
     {
         [Key]
         public int ID { get; set; }
-        public int ArtistNumber { get; set; }
         public string Artistname { get; set; }
-        public string Genre { get; set; }
         public string ArtistImage { get; set; }
 
         public virtual List<SongInfo> SongsInfo { get; set; }
@@ -24,9 +22,8 @@ namespace OODProject
     {
         [Key]
         public int SongID { get; set; }
-        public int TrackNumber { get; set; }
         public string SongName { get; set; }
-        public int TrackTime { get; set; }
+        
 
         public int ID { get; set; }
         public virtual ArtistInfo ArtistsInfo { get; set; }
@@ -40,7 +37,7 @@ namespace OODProject
     {
         public SongDataInfo() : base("MusicPlayerData") { }
 
-        public DbSet<Artists> Artists { get; set; }
-        public DbSet<Songs> Songs { get; set; }
+        public DbSet<ArtistInfo> Artists { get; set; }
+        public DbSet<SongInfo> Songs { get; set; }
     }
 }

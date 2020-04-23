@@ -69,3 +69,5 @@ C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\bin\Debug\Entit
 C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\bin\Debug\EntityFramework.xml
 C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\obj\Debug\OODProject_Content.g.cs
+C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\bin\Debug\NAudio.dll
+C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\bin\Debug\NAudio.xml

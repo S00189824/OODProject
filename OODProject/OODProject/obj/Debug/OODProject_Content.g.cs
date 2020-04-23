@@ -14,14 +14,11 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/nier/the%20sound%20of%20the%20end.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/nier/war%20&%20war.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/02.%20geralt%c2%a0of%c2%a0rivia.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/08.%20spikeroog.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/10.%20silver%c2%a0for%c2%a0monsters....mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/12.%20the%c2%a0nightingale.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/gwent%20the%20witcher%20card%20game%20ost%20-%20monstrous%20might" +
     ".mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/the%20bloody%20mistress%20thronebreaker%20the%20witcher%20tales%2" +
     "0ost.mp3")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("artists/witcher/thronebreaker%20the%20witcher%20tales%20ost%20-%20retribution%20(" +
-    "long%20version).mp3")]
 
 

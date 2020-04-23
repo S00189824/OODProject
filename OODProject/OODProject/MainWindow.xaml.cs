@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NAudio.Wave;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,52 +24,48 @@ namespace OODProject
     public partial class MainWindow : Window
     {
         MediaPlayer player = new MediaPlayer();
-        List<Artists> Artists = new List<Artists>();
         DirectoryInfo desktopfolder = new DirectoryInfo(@"C:\Users\david\OneDrive\Desktop" + "\\Music");
-        SongData db = new SongData();
+        SongDataInfo db = new SongDataInfo();
+        List<string> artistnames = new List<string>();
+        int x = 0;
+        string url = "../../Assets/Pic";
         
-
 
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            DispatcherTimer dt = new DispatcherTimer();
-            dt.Interval = TimeSpan.FromSeconds(1);
-            dt.Tick += Dt_Tick;
+            
 
             var query = from a in db.Artists
-                        select a;
-            //var result = query.ToList();
-            lbxMusic.ItemsSource = query.ToList();
+                        select a.Artistname;
 
+            artistnames = query.ToList();
+            SetArtist();
+            SetSongs();
         }
 
 
-        private int increment = 0;
-        private void Dt_Tick(object sender, EventArgs e)
-        {
-            increment++;
-            
-        }
+        
 
         private void BtnPlay_Click(object sender, RoutedEventArgs e)
         {
             string directoryname = @"C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\Artists\Witcher\";
             string songname = "GWENT The Witcher Card Game OST - Monstrous Might";
-            string filetype = ".mp3";
 
+            string filetype = ".mp3";
+            
             Uri song = new Uri(directoryname + songname + filetype, UriKind.Relative);
 
             player.Open(song);
             player.Play();
         }
 
-        
+
 
         private void LbxMusic_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -80,25 +77,57 @@ namespace OODProject
             var query = from a in db.Artists
                         select a;
             //var result = query.ToList();
-            lbxMusic.ItemsSource = query.ToList();
+            test.ItemsSource = query.ToList();
         }
+
+
 
         private void BtnCycleLeft_Click(object sender, RoutedEventArgs e)
         {
-
+            if(x== 1)
+            {
+                x--;
+            }
+            else
+            {
+                x = 1;
+            }
+            SetArtist();
+            SetSongs();
         }
 
         private void BtnCycleRight_Click(object sender, RoutedEventArgs e)
         {
-
+            if(x == 0)
+            {
+                x++;
+            }
+            else
+            {
+                x = 0;
+            }
+            SetArtist();
+            SetSongs();
         }
 
         void SetArtist()
         {
-
+            TblkArtistName.Text = artistnames[x];
+            artistImage.Fill = new ImageBrush(new BitmapImage(new Uri(url + (x + 1).ToString() + ".jpg",UriKind.Relative)));
         }
 
-        
-        
+        void SetSongs()
+        {
+            var query = from s in db.Songs
+                        where s.ID == x + 1
+                        select s.SongName;
+
+            
+
+            test.ItemsSource = query.ToList();
+
+            
+        }
+
     }
 }
