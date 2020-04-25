@@ -24,12 +24,14 @@ namespace OODProject
     public partial class MainWindow : Window
     {
         MediaPlayer player = new MediaPlayer();
-        DirectoryInfo desktopfolder = new DirectoryInfo(@"C:\Users\david\OneDrive\Desktop" + "\\Music");
+        string SongURL = "../../Artists/";
         SongDataInfo db = new SongDataInfo();
-        List<string> artistnames = new List<string>();
+        List<ArtistInfo> artists = new List<ArtistInfo>();
         int x = 0;
         string url = "../../Assets/Pic";
-        
+        ArtistInfo currentArtist;
+        bool playing = false;
+        bool paused = false;
 
         public MainWindow()
         {
@@ -42,9 +44,9 @@ namespace OODProject
             
 
             var query = from a in db.Artists
-                        select a.Artistname;
+                        select a;
 
-            artistnames = query.ToList();
+            artists = query.ToList();
             SetArtist();
             SetSongs();
         }
@@ -54,31 +56,21 @@ namespace OODProject
 
         private void BtnPlay_Click(object sender, RoutedEventArgs e)
         {
-            string directoryname = @"C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\Artists\Witcher\";
-            string songname = "GWENT The Witcher Card Game OST - Monstrous Might";
-
-            string filetype = ".mp3";
-            
-            Uri song = new Uri(directoryname + songname + filetype, UriKind.Relative);
-
-            player.Open(song);
-            player.Play();
+            if(playing && paused)
+            {
+                player.Play();
+                paused = false;
+            }
+            else if(playing && !paused)
+            {
+                player.Pause();
+                paused = true;
+            }
         }
 
 
 
-        private void LbxMusic_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            string directoryname_Nier = @"C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\Artists\Witcher\";
-            string directoryname_Witcher = @"C:\Users\David\Documents\GitHub\OODProject\OODProject\OODProject\Artists\Nier\";
-
-            string[] Nier_songs = { "Dark Colossus - Kaiju", "Emil - Despair", "Significance - Nothing - J'Nique Nicole", "The Sound of the End", "War & War" };
-
-            var query = from a in db.Artists
-                        select a;
-            //var result = query.ToList();
-            test.ItemsSource = query.ToList();
-        }
+       
 
 
 
@@ -112,8 +104,9 @@ namespace OODProject
 
         void SetArtist()
         {
-            TblkArtistName.Text = artistnames[x];
+            TblkArtistName.Text = artists[x].Artistname;
             artistImage.Fill = new ImageBrush(new BitmapImage(new Uri(url + (x + 1).ToString() + ".jpg",UriKind.Relative)));
+            currentArtist = artists[x];
         }
 
         void SetSongs()
@@ -129,5 +122,21 @@ namespace OODProject
             
         }
 
+        private void Test_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var song = test.SelectedItem;
+
+            //Console.WriteLine(song);
+            if (song != null)
+            {
+                player.Stop();
+
+                Uri songTOPlay = new Uri(SongURL + currentArtist.Artistname + "/" + song + ".mp3", UriKind.Relative);
+                Console.WriteLine(songTOPlay);
+                player.Open(songTOPlay);
+                player.Play();
+                playing = true;
+            }
+        }
     }
 }
